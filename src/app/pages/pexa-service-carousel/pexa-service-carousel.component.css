@@ -1,0 +1,46 @@
+.carousel-container {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  .carousel-wrapper {
+    display: inline-block;
+  }
+  
+  .carousel-slide {
+    width: 200px; /* Adjust as needed for desktop */
+    height: auto; /* Adjust as needed */
+    background-color: #ddd; /* Adjust as needed */
+    display: inline-block;
+    margin-right: 10px; /* Adjust spacing between slides */
+  }
+  
+  /* Media queries for responsive design */
+  @media screen and (max-width: 768px) {
+    .carousel-slide {
+        width: 175px; /* Adjust as needed for desktop */
+        height: auto; /* Adjust as needed */
+    }
+  }
+  
+  .circle {
+    width: 7vw; 
+    height: 7vw; 
+    /* background-color: #fafa04;  */
+    border-radius: 50%;
+    border: 2px solid rgb(233, 249, 0); 
+    margin-left: 25%;
+    margin-top: 20%;
+  }
+  
+  /* Media query for mobile devices */
+  @media screen and (max-width: 768px) {
+    .circle {
+      width: 20vw; /* 20% of the viewport width for mobile */
+      height: 20vw; /* 20% of the viewport width for mobile */
+    }
+  }
+  .serviceName{
+    margin-top: 10%;
+    text-align: center;
+  }

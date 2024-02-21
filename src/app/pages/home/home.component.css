@@ -1,0 +1,229 @@
+.container {
+  background: #e6e4e4;
+  width: auto;
+  /* max-width: 100%; */
+  height: 59vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.smallcontainer {
+  background-color: white;
+  max-width: 75%;
+  width: 90%;
+  border-radius: 16px;
+  margin: 0 auto;
+  margin-top: 2%;
+  padding: 2%;
+  height: auto;
+  border: 2px solid rgb(239, 237, 237);
+  box-sizing: border-box;
+}
+
+.line {
+  width: 100%;
+  height: 3px;
+  background-color: transparent;
+  border-top: 2px solid #FFD700;
+  margin-top: 2%;
+}
+
+.smallinsideBox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Box1,
+.Box2 {
+  width: calc(47% - 1rem);
+  max-width: 90%;
+  height: 13vh;
+  border-radius: 2.5rem;
+  border: 0.125rem solid rgb(206, 199, 199);
+  margin-top: 3.5vh;
+  display: flex;
+}
+
+img {
+  width: 50px; /* Adjust the width to make the picture smaller */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+.container1 {
+  margin-top: 2%;
+  display: flex;
+  min-width: 100%;
+  height: 75%;
+  /* background-color: rgb(242, 242, 248); */
+}
+.container2{
+  margin-top: 1%;
+  display: flex;
+  min-width: 100%;
+  height: 100%;
+  /* background-color: #FFD700; */
+}
+
+
+
+.buttonedit {
+  font-size: 20px;
+  padding: 10px 20px;
+  width: 175px;
+  height: 55px;
+  margin-left: 25%;
+  margin-top: 10px;
+  border-radius: 15px;
+}
+.container-3 {
+  width: 100%;
+  height:auto;
+  overflow:hidden; 
+  display:flex; 
+  justify-content:center; 
+}
+
+.scroll-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch; /* Enables momentum scrolling on iOS */
+  scrollbar-width: none; /* Hides scrollbar on Firefox */
+  -ms-overflow-style: none; /* Hides scrollbar on Edge and IE */
+}
+
+.scroll-card {
+  flex: 0 0 auto;
+  width: 300px;
+  margin-right: 20px;
+  scroll-snap-align: start;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-title {
+  margin: 0;
+}
+
+.card-description {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.buy-btn {
+  display: block;
+  width: 52px; /* Adjust width as needed */
+  height: 45px; /* Adjust height as needed */
+  line-height: 30px; /* Vertically center the text */
+  background-color:  #0D6EFD;
+  ; /* Warning color */
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 15%; /* Makes it a circular button */
+  cursor: pointer;
+  margin-left: auto; /* Moves the button to the right */
+}
+
+.buy-btn:hover {
+  background-color: #1100fd; /* Darker shade of warning color on hover */
+}
+
+.imagecontainer {
+  position: relative;
+  max-width: 100%; /* Ensure container adjusts to screen size */
+  height: auto; /* Allow height to adjust according to content */
+}
+
+.imageseteup {
+  width: 100%; /* Ensure image fills container */
+}
+
+.text-container {
+  position: absolute;
+  top: 50%; /* Adjust as needed */
+  left: 10%; /* Adjust as needed */
+  transform: translateY(-50%); /* Center vertically */
+}
+.text-container h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 42px; /* Keep font size consistent with the provided style */
+  line-height: 38px; /* Keep line height consistent with the provided style */
+  font-weight: 700;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+/* Media Query for Mobile View */
+@media only screen and (max-width: 768px) {
+  .text-container h2 {
+      font-size: 1rem; /* Adjust font size for mobile view */
+      line-height: 1.8rem; /* Adjust line height for mobile view */
+  }
+}
+.testimonial-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  margin-top: 2%;
+}
+.container5{
+  width: 100%;
+  height: auto;
+  /* background: yellow; */
+}
+.what-clients-say {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 33px;
+  font-weight: 600;
+  line-height: 45px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.subcontainer5{
+  width: 100%;
+  height: auto;
+  /* background: #ab1414; */
+  display: flex;
+}
+.partnership-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-left: 4%;
+  padding-top: 2%;
+
+}
+@media only screen and (max-width: 768px) {
+  .partnership-text {
+    font-size: 24px; /* Adjust font size for mobile view */
+    line-height: 28px; /* Adjust line height for mobile view if needed */
+  }
+}
+.container6{
+  margin-top: 3%;
+  width: 100%;
+  height: auto;
+  background: #E7EBEE;
+
+}
+

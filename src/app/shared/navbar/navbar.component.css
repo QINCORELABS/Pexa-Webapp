@@ -1,0 +1,53 @@
+
+.navbar-brand {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: aliceblue;
+  }
+  .LogoEdit{
+    padding-left: 25%;
+  }
+  .custom-navbar {
+    background-color: #404042F2; /* Set the background color */
+  }
+
+  
+  @media only screen and (min-width: 768px) {
+    .navbar-nav {
+      padding-left: 12%; /* Add left padding of 25% for screens wider than 768px (desktop) */
+    }
+  }
+  
+  
+ /* Default button color */
+.navbar-toggler {
+    color: black; /* Set default color */
+  }
+  
+  /* Media query for smaller screen sizes (e.g., mobile) */
+  @media (max-width: 768px) {
+    .navbar-toggler {
+      color: rgb(235, 227, 5); /* Change color to white for mobile */
+    }
+  }
+  .icons{
+    display: flex;
+    padding-left: 40%;
+ 
+  }
+/* For desktop screens */
+@media (min-width: 768px) {
+    .icons .nav-item:not(:last-child) {
+        margin-right: 10px; /* Adjust the space between icons as needed */
+    }
+}
+
+.icons .nav-item:not(:last-child) {
+    margin-right: 10px; /* Adjust the space between icons as needed */
+}
+  
+  
