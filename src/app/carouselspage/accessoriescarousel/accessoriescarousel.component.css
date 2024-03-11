@@ -1,0 +1,67 @@
+/* Add color to the bottom scroll bar */
+.carousel-container {
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+/* Styling for the scrollbar */
+.carousel-container::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+  height: 12px; /* Height of the scrollbar */
+}
+
+/* Color of the scrollbar track */
+.carousel-container::-webkit-scrollbar-track {
+  background: #f8f5f5; /* Background color of the scrollbar track */
+}
+
+/* Color of the scrollbar thumb */
+.carousel-container::-webkit-scrollbar-thumb {
+  background: rgb(252, 252, 179); /* Color of the scrollbar thumb */
+  border-radius: 6px; /* Rounded corners for the scrollbar thumb */
+}
+
+.carousel-wrapper {
+  display: inline-block;
+}
+
+.carousel-slide {
+  width: 200px; /* Adjust as needed for desktop */
+  height: auto; /* Adjust as needed */
+  /* background: #f7f9f9; */
+  display: inline-block;
+  margin-right: 10px; /* Adjust spacing between slides */
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 768px) {
+  .carousel-slide {
+    width: 175px; /* Adjust as needed for desktop */
+    height: auto; /* Adjust as needed */
+  }
+}
+
+.circle {
+  width: 9vw;
+  height: 7vw;
+  border-radius: 25%;
+  margin-left: 25%;
+  margin-top: 20%;
+}
+.circle, img{
+  border-radius: 25%;
+  
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+  .circle {
+    width: 28vw; /* 20% of the viewport width for mobile */
+    height: 25vw; /* 20% of the viewport width for mobile */
+  }
+}
+
+.serviceName {
+  margin-top: 10%;
+  text-align: center;
+}

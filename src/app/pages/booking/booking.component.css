@@ -1,0 +1,180 @@
+.backbutton {
+    width: 100%;
+    background-color: rgb(237, 242, 242);
+    height: 75px;
+}
+
+.backbutton img {
+    max-width: 45px;
+    height: auto;
+    border: 1px solid #e3dbdb;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-top: 1%;
+    margin-left: 3%;
+}
+.background{
+    width: 100%;
+    height: auto;
+    /* background: #dd7575; */
+}
+
+.container {
+    background-color: rgb(238, 238, 238);
+    width: 65%;
+    height: 45%;
+    margin-top: 5%;
+    border-radius: 25px;
+    
+}
+
+.delivarydate {
+    display: flex;
+    padding-top: 1%;
+
+}
+
+.delivarydate p {
+
+    padding-left: 3%;
+}
+
+.locationBox {
+    background-color: rgb(251, 251, 251);
+    width: 100%;
+    height: 45%;
+    border-radius: 20px;
+}
+
+ul {
+    list-style-type: none;
+    /* Remove default bullet style */
+}
+
+.thicker-bullet {
+    position: relative;
+    /* Position the pseudo-element relative to the list item */
+    padding-left: 20px;
+    /* Add space to the left of the list item for the bullet */
+}
+
+.thicker-bullet::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+.thicker-bullet p {
+    color: black;
+    /* Set text color to black */
+    margin-left: 25px;
+    /* Add space to the left of the paragraph to align with the bullet */
+}
+
+.location-emblem {
+    display: flex;
+    margin-top: 7%;
+    margin-left: 1%;
+}
+
+.location-emblem li {
+    margin-left: 2%;
+}
+.image-text-container {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.image-container {
+    margin-top: 2%;
+}
+
+.image-container img {
+    width: 40px; /* Set the width of the image */
+    height: auto; /* Let the height adjust automatically to maintain aspect ratio */
+}
+
+.text {
+    margin-left: 10px; /* Add space between the image and text */
+    color: #0D6EFD;
+    margin-top: 3%;
+}
+.warning-button {
+    background-color: #ffc107; /* Warning color */
+    color: #212529; /* Text color */
+    border: 1px solid #ffc107; /* Border color */
+    padding: 10px 20px; /* Padding */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Cursor style */
+    border-radius: 4px; /* Border radius */
+    transition: background-color 0.3s ease;
+    margin-left: 70%; /* Smooth transition */
+}
+
+.warning-button:hover {
+    background-color: #f2b90d; /* Hover color */
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        background-color: rgb(223, 217, 217);
+        width: 100%;
+        height: auto;
+        margin-top: 5%;
+    }
+
+    .backbutton img {
+        max-width: 45px;
+        /* Make the image responsive */
+        height: auto;
+        /* Maintain aspect ratio */
+        border: 1px solid #e3dbdb;
+        /* Add a border around the image */
+        border-radius: 5px;
+        /* Add rounded corners to the border */
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        /* Add a subtle shadow */
+        margin-top: 5%;
+        margin-left: 3%;
+    }
+    .locationBox {
+        background-color: rgb(242, 244, 240);
+        width: 100%;
+        height: 55%;
+        border-radius: 20px;
+    }
+
+    .location-emblem {
+        display: flex;
+        margin-top: 25%;
+        margin-left: 0%;
+    }
+    .warning-button {
+        background-color: #ffc107; /* Warning color */
+        color: #212529; /* Text color */
+        border: 1px solid #ffc107; /* Border color */
+        padding: 9px 15px; /* Padding */
+        font-size: 16px; /* Font size */
+        cursor: pointer; /* Cursor style */
+        border-radius: 4px; /* Border radius */
+        transition: background-color 0.3s ease;
+        margin-left: 14%; /* Smooth transition */
+        margin-top: 1%;
+    }
+    
+    .warning-button:hover {
+        background-color: #efb70f; /* Hover color */
+    }
+    
+    
+}

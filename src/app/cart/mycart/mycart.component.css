@@ -1,0 +1,60 @@
+.desktop-container {
+  display: flex;
+  flex-direction: row;
+  /* Horizontal layout by default */
+}
+
+.desktop-item {
+  width: 50%;
+  /* Each item takes half of the container width */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  /* border: 1px solid black; */
+  padding: 8px;
+  text-align: center;
+}
+
+td,
+h5 {
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+button {
+
+  margin-top: 250px;
+  margin-left: 75%;
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 600px) {
+  .desktop-container {
+    flex-direction: column;
+    /* Switch to vertical layout */
+  }
+
+  .desktop-item {
+    width: 100%;
+    /* Each item takes full width of the container */
+  }
+
+  button {
+
+    margin-top: 2px;
+    margin-left: 10%;
+
+
+  }
+}

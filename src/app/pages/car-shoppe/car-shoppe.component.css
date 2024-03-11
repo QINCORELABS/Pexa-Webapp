@@ -1,0 +1,290 @@
+.container {
+    width: 100%;
+    height: 75%;
+    background: #F3F3F3;
+
+}
+
+/* Media query for screens up to 768px wide (typical mobile devices) */
+@media only screen and (max-width: 768px) {
+    .container {
+        height: 50%;
+        /* Adjust height for mobile view as needed */
+    }
+
+}
+
+.welcome-text {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.53em;
+    text-align: center;
+    padding-top: 15%;
+    /* This padding will remain unchanged for mobile view */
+}
+
+/* Media query for screens up to 768px wide (typical mobile devices) */
+@media only screen and (max-width: 768px) {
+    .welcome-text {
+        font-size: 16px;
+        /* Adjust font size for mobile view as needed */
+        line-height: 20px;
+        /* Adjust line height for mobile view as needed */
+        letter-spacing: 0.3em;
+        /* Adjust letter spacing for mobile view as needed */
+        padding-top: 20%;
+        /* Adjust padding top for mobile view as needed */
+    }
+}
+
+.car-shoppe {
+    font-family: Open Sans;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0.07em;
+    padding-top: 4%;
+    text-align: center;
+}
+
+/* Media query for screens up to 768px wide (typical mobile devices) */
+@media only screen and (max-width: 768px) {
+    .car-shoppe {
+        font-size: 32px;
+        /* Adjust font size for mobile view */
+        line-height: 28px;
+        /* Adjust line height for mobile view */
+        letter-spacing: 0.05em;
+        /* Adjust letter spacing for mobile view */
+        text-align: center;
+        /* Adjust text alignment for mobile view */
+
+
+    }
+}
+
+.custom-button {
+    display: block;
+    /* Ensures the button takes up the full width */
+    margin: 0 auto;
+    /* Auto margin horizontally centers the button */
+    margin-top: 3%;
+    width: 150px;
+}
+
+.scrollacessores {
+    width: 90%;
+    height: auto;
+    /* background: #000; */
+    margin-left: 5%;
+    margin-top: 2%;
+    border-radius: 3%;
+
+
+
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .scrollacessores {
+        height: auto;
+        /* background: #000; */
+        margin-left: 5%;
+        margin-top: 2%;
+        border-radius: 3%;
+    }
+
+    .deals-text {
+        font-family: "Open Sans", sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0em;
+
+
+    }
+
+    .spotlight-text {
+        font-family: "Open Sans", sans-serif;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 41px;
+        letter-spacing: 0em;
+
+    }
+
+    .textallign {
+        padding-left: 3%;
+
+    }
+
+
+}
+
+.deals-text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    margin-top: 2%;
+
+}
+
+.spotlight-text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 41px;
+    letter-spacing: 0em;
+
+}
+
+.textallign {
+    padding-left: 3%;
+}
+
+.Box2 {
+    width: 90%;
+    height: auto;
+    /* background-color: blue; */
+    margin-left: 5%;
+    display: flex;
+}
+
+
+.Spotlightbox {
+
+    height: auto;
+    /* background-color: brown; */
+    /* border: 2px solid black; */
+
+}
+
+/* @media only screen and (max-width: 600px) {
+    .Spotlightbox {
+        width: 100%;
+        height: 90%;
+        background-color: brown;
+        margin: auto;
+    }
+} */
+
+.productviewbox {
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(204, 181, 181); */
+}
+
+/* 
+@media only screen and (max-width: 600px) {
+    .productviewbox {
+        width: 100%;
+        height: 90%;
+        background-color: rgb(137, 128, 128);
+        margin: auto;
+    }
+} */
+
+.border {
+    width: 90%;
+    height: 80%;
+    /* background-color: yellow; */
+    margin-left: 5%;
+    margin-top: 8%;
+
+    border-radius: 2%;
+    padding-left: 20%;
+    padding-top: 15%;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    .border {
+        width: 90%;
+        height: 65%;
+        background-color: rgb(238, 238, 231);
+        margin-top: 35%;
+
+
+    }
+}
+
+.hot-deals {
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.Box3 {
+    width: 100;
+    height: 55%;
+    display: flex;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+
+
+}
+
+@media only screen and (max-width: 600px) {
+    .Box3 {
+        width: 100%;
+        height: 40%;
+
+    }
+}
+
+.offeredproducts {
+    display: flex;
+}
+
+.offeredproducts h3 {
+    margin-left: 3%;
+    margin-top: 3%;
+}
+
+.offeredproducts h5 {
+    color: blue;
+    margin-top: 3%;
+    margin-left: 70%;
+}
+@media only screen and (max-width: 600px) {
+   
+.offeredproducts {
+    display: flex;
+}
+
+.offeredproducts h3 {
+    margin-left: 3%;
+    margin-top: 3%;
+}
+
+.offeredproducts h5 {
+    color: blue;
+    margin-top: 3%;
+    margin-left: 45%;
+}
+}
+.Offproducts{
+    width: 95%;
+    /* background-color: aquamarine; */
+    height: auto;
+    margin-left: 3%;
+    
+}
+@media only screen and (max-width: 600px) {
+    .Offproducts{
+        width: 95%;
+        /* background-color: rgb(20, 79, 59); */
+        height: auto;
+        margin-left: 3%;
+        
+    }}

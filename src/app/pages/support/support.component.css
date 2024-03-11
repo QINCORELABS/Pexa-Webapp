@@ -1,0 +1,205 @@
+.container1 {
+    width: 100%;
+    height: auto;
+    background-color: rgb(232, 224, 224);
+    display: flex;
+}
+
+.support-team-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-left: 2%;
+
+}
+
+
+.custom_container {
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: flex-start;
+    /* Align to the top */
+    width: 100%;
+    height: auto;
+    /* background-color: aqua; */
+    /* Adjust height as needed */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    margin-top: 12%;
+
+    /* background-color: blue; */
+}
+
+
+.help-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 41px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 3%;
+}
+
+.centered-box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12vh;
+    /* Adjust as needed */
+}
+
+.custom-box {
+    display: flex;
+    width: 948px;
+    height: 124px;
+    border-radius: 12px;
+    border: 1px solid #FFD700;
+    background-color: #FFD70052;
+}
+
+.contact-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 2%;
+
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .custom-box {
+        display: flex;
+        width: 948px;
+        height: 124px;
+        border-radius: 12px;
+        border: 1px solid #FFD700;
+        background-color: #FFD70052;
+    }
+
+    .contact-text {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 25px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin-top: 9%;
+        margin-left: 2%;
+
+    }
+    .centered-box-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 12vh;
+        /* Adjust as needed */
+        margin-top: 23%;
+    }
+
+}
+
+.box {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Single column by default */
+    grid-row-gap: 20px;
+    /* Spacing between rows */
+    margin-top: 5%;
+}
+
+.box01,
+.box02 {
+    /* background-color: violet; */
+    /* Default background color */
+}
+
+/* Default styles for both mobile and desktop */
+.support-logo {
+    margin-top: 5%;
+    margin-left: 44%;
+}
+
+/* Styles for mobile view */
+@media screen and (max-width: 767px) {
+    .box {
+        grid-template-columns: 1fr;
+        /* Single column for mobile */
+    }
+
+    .support-logo {
+        width: 80px;
+        /* Adjusted width for mobile */
+        height: 80px;
+        /* Adjusted height for mobile */
+    }
+}
+
+/* Styles for desktop view */
+@media screen and (min-width: 768px) {
+    .box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+        grid-column-gap: 20px;
+        
+    }
+
+    .support-logo {
+        width: 100px;
+    
+        height: 100px;
+        
+    }
+}
+
+.customer-care-address {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.address-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.contact-number {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.phone-number {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+}

@@ -1,0 +1,28 @@
+.container{
+    width: 100%;
+    height: 75px;
+    /* background-color: aquamarine; */
+    display: flex;
+}
+.icons{
+    display: flex;
+    padding-left: 83%;
+    padding-top: 1%;
+    list-style: none;
+    
+
+}
+.icons li {
+    margin-right: 15px; /* Add spacing between icons */
+}
+@media (max-width: 767px) {
+    
+    
+    .icons {
+        justify-content: center; /* Center icons */
+        padding-left: 40%;
+        padding-top: 8%;
+    }
+}
+
+

@@ -7,7 +7,11 @@
     letter-spacing: 0em;
     text-align: center;
     color: aliceblue;
+    transition: color 0.3s; /* Add a smooth transition effect */
   }
+  .navbar-brand:hover {
+    color: #e2b318; /* Change the color on hover */
+}
   .LogoEdit{
     padding-left: 25%;
   }
@@ -47,7 +51,9 @@
 }
 
 .icons .nav-item:not(:last-child) {
-    margin-right: 10px; /* Adjust the space between icons as needed */
+    margin-right: 15px; /* Adjust the space between icons as needed */
 }
-  
+  .nav-item{
+    padding-left: 45px;
+  }
   

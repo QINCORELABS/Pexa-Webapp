@@ -1,0 +1,121 @@
+<div class="maincontainer">
+    <div class="centered-container">
+      <div class="subheading">Welcome to Pexa</div>
+      <div class="main-heading">India’s Biggest Mobile Car Wash Network</div>
+    </div>
+  </div>
+  <div class="container">
+    <ul>
+      <li>
+        <div class="location">
+          <img src="assets/logo/Location.svg" alt="">
+      <li class="user-location">User Location</li>
+      <hr class="custom-hr">
+  </div>
+  </li>
+  <div class="box">
+    <div class="box1">
+      <a [routerLink]="'CarWash'" class="list-item">
+        <img src="assets/logo/Carshopee.svg" alt="Carshopee Logo" class="box-image">
+        Door step Car Wash
+      </a>
+    </div>
+    <div class="box1">
+      <a [routerLink]="'CarShope'" class="list-item">
+        <img src="assets/logo/shop (1) 1.svg" alt="Car Shoppe Logo" class="box-image">
+        Car Shoppe
+      </a>
+    </div>
+  </div>
+  </ul>
+  </div>
+  <div class="container_side">
+    <div class="grid-container">
+      <div style="background-color: white;" class="grid-item">
+        <div class="book-now-text">Book Your Door step <br> Car wash Now</div>
+        <div class="plants-text">Easiest way to <br> healthy life by buying <br> your favorite plants</div>
+        <a [routerLink]="'CarwashTable'" class="btn btn-yellow">Book Now</a>
+      </div>
+      <div class="grid-item">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0"
+          allowfullscreen></iframe>
+      </div>
+      <div class="grid-item border-container">
+        <div class="hot-deals-text">Hot Deals For You</div>
+        <button [routerLink]="'/offeredProducts'" class="custom-button mt-5">View All</button>
+  
+      </div>
+    </div>
+    <div class="header-container">
+      <h3 class="header-title">Trending Categories</h3>
+      <h6 class="see-all">See all</h6>
+    </div>
+    <!-- call the APIs in These Components -->
+    <app-pexa-service-carousel></app-pexa-service-carousel>
+    <div class="emptyspace"></div>
+    <app-popular-service-carousal></app-popular-service-carousal>
+    <div class="featuredProduct">
+      <h3 class="featured-title">Featured Products</h3>
+      <h6 class="see-all">See all Products</h6>
+    </div>
+    <app-featuredproducts></app-featuredproducts>
+    <div class="arrowScroll">
+      <h1 class="left-arrow">&lt;</h1>
+      <h1 class="right-arrow">&gt;</h1>
+    </div>
+    <div class="imagecontainer">
+      <img class="imageseteup" src="assets/logo/Rectangle 144.svg" alt="">
+      <div class="text-container">
+        <div class="discounttext">UP To 20% Discount <br>Check it out</div>
+        <button type="button" class="btn btn-warning custom-button009">Book Now<span class="arrow">→</span></button>
+      </div>
+    </div>
+    <div class="emptyspace"></div>
+    <div class="container5 ">
+      <p class="testimonial-text">Client’s Testimonials</p>
+      <h2 class="what-clients-say">What Clients Say</h2>
+      <div class="subcontainer5">
+        <div class="scroll-carousel">
+  
+  
+          <div class="scroll-card">
+            <img style="width: 25%; height: 25%;" src="assets/logo/Mask group.svg" alt="Placeholder Image"
+              class="card-image">
+            <div class="card-content">
+              <span
+                style="font-family: 'Poppins', sans-serif; font-size: 14px; font-weight: 500; line-height: 21px; letter-spacing: 0em; text-align: left;">John
+                Samuel</span>
+              <p
+                style="font-family: 'Poppins', sans-serif; font-size: 10px; font-weight: 400; line-height: 15px; letter-spacing: 0em; text-align: left;">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                explicabo.
+              </p>
+            </div>
+          </div>
+  
+          <div class="scroll-card">
+            <img style="width: 25%; height: 25%;" src="assets/logo/Mask group.svg" alt="Placeholder Image"
+              class="card-image">
+            <div class="card-content">
+              <span
+                style="font-family: 'Poppins', sans-serif; font-size: 14px; font-weight: 500; line-height: 21px; letter-spacing: 0em; text-align: left;">John
+                Samuel</span>
+              <p
+                style="font-family: 'Poppins', sans-serif; font-size: 10px; font-weight: 400; line-height: 15px; letter-spacing: 0em; text-align: left;">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                explicabo.
+              </p>
+            </div>
+          </div>
+  
+          <!-- More testimonials here -->
+        </div>
+      </div>
+    </div>
+    <div class="container6">
+      <p class="partnership-text">Become a partner of <br> India’s Biggest <br> Mobile car wash network</p>
+      <button type="button" class="btn btn-warning custom-button">Join Now</button>
+    </div>
+  </div>
