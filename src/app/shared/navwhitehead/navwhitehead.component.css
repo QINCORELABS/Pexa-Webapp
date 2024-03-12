@@ -1,28 +1,105 @@
-.container{
+.container {
     width: 100%;
-    height: 75px;
-    /* background-color: aquamarine; */
+    height: auto;
+    background-color: aquamarine;
     display: flex;
 }
-.icons{
+
+.icons {
     display: flex;
-    padding-left: 83%;
+    padding-left: 65%;
     padding-top: 1%;
     list-style: none;
-    
+
 
 }
+
+.sticky-name {
+    display: flex;
+    font-size: 15px;
+    color: #404042;
+    position: sticky;
+    top: 0;
+    /* Adjust the distance from the top as needed */
+    z-index: 1000;
+    /* Adjust the z-index to ensure it's above other content if needed */
+    /* background-color: white; */
+    /* Optional: Set a background color to make it stand out */
+    padding: 10px;
+    /* Optional: Add padding for better spacing */
+    white-space: nowrap;
+    /* Ensure the text stays on a single line */
+}
+
+
+/* styles.css */
+.nav-item {
+    display: flex;
+    align-items: center;
+    padding: 0.1rem;
+    /* Adjust padding as needed */
+}
+
+.nav-item img,
+.nav-item i {
+    margin-right: 0.2rem;
+    /* Adjust margin as needed */
+}
+
 .icons li {
-    margin-right: 15px; /* Add spacing between icons */
+    margin-right: 15px;
+    /* Add spacing between icons */
 }
+
 @media (max-width: 767px) {
-    
-    
+
+
     .icons {
-        justify-content: center; /* Center icons */
-        padding-left: 40%;
-        padding-top: 8%;
+        /* justify-content: center; */
+        /* Center icons */
+        padding-left: 1px;
+        padding-top: 15%;
+        /* background-color: black; */
     }
+
+    .sticky-name {
+        position: fixed;
+        top: 0;
+        right: 0;
+        /* Position at the right end */
+        /* background-color: white;  */
+        padding: 10px;
+        /* Add padding as needed */
+
+        z-index: 1000;
+        /* Ensure it's above other content */
+        width: auto;
+        /* Let it adjust its width based on content */
+        text-align: right;
+        /* Align text to the right */
+        box-sizing: border-box;
+        /* Include padding and border in element's total width and height */
+    }
+
+
+    .LogoEdit {
+        margin-top: 10%;
+        /* Add 2% margin from the top */
+        margin-bottom: 2%;
+        /* Add 2% margin from the bottom */
+    }
+
+    /* styles.css */
+    .nav-item {
+        display: flex;
+        align-items: center;
+        
+        /* Adjust padding as needed */
+    }
+
+   
+
+
+
+
 }
-
-

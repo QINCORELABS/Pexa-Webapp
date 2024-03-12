@@ -1,6 +1,6 @@
 import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './pages/home/home.component';
+// import { HomeComponent } from './pages/home/home.component';
 import { DoorStepCarWashComponent } from './pages/door-step-car-wash/door-step-car-wash.component';
 import { CarShoppeComponent } from './pages/car-shoppe/car-shoppe.component';
 import { BookingComponent } from './pages/booking/booking.component';
@@ -24,8 +24,8 @@ import { OfferedProducsComponent } from './carouselspage/offered-producs/offered
 import { HomepageComponent } from './pages/homepage/homepage.component';
 
 const routes: Routes = [
-  // { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: 'home', component: HomeComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  // { path: 'home', component: HomeComponent },
   { path: 'home', component: HomepageComponent },
 
   { path: 'CarWash', component: DoorStepCarWashComponent },

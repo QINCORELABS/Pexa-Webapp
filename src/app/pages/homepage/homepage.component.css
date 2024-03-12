@@ -578,5 +578,54 @@
     }
   
   }
+
   
+  .comment-box-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust as needed */
+    gap: 20px; /* Adjust the gap between comment boxes */
+  }
+  
+  .comment {
+    background-color: #f0f0f0; /* Background color of each comment box */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+  }
+  
+  .avatar {
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    border-radius: 50%; /* Make the avatar round */
+    margin-right: 10px;
+  }
+  
+  .comment-text {
+    margin: 0; /* Remove default margin */
+    font-size: 16px; /* Adjust font size */
+    line-height: 1.5; /* Adjust line height */
+  }
+  
+  /* Responsive adjustments for mobile devices */
+  @media screen and (max-width: 768px) {
+    .comment-box-grid {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust as needed */
+      gap: 10px; /* Adjust the gap between comment boxes */
+    }
+  
+    .avatar {
+      width: 40px; /* Adjust as needed */
+      height: 40px; /* Adjust as needed */
+    }
+  
+    .comment-text {
+      font-size: 10px; /* Adjust font size */
+    }
+    .scrollable-container {
+      overflow-y: hidden; /* Hide vertical scrollbar on mobile */
+      overflow-x: scroll; /* Enable horizontal scrolling */
+      -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS devices */
+      white-space: nowrap; /* Prevent line breaks */
+    }
+  }
   

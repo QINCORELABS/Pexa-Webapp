@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './pages/home/home.component';
+// import { HomeComponent } from './pages/home/home.component';
 import { DoorStepCarWashComponent } from './pages/door-step-car-wash/door-step-car-wash.component';
 import { CarShoppeComponent } from './pages/car-shoppe/car-shoppe.component';
 import { BookingComponent } from './pages/booking/booking.component';
@@ -33,6 +33,7 @@ import { FormsModule } from '@angular/forms';
 import { ProductsComponent } from './Products/products/products.component';
 import { OfferedproductsComponent } from './Products/offeredproducts/offeredproducts.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
+import { NavwhitebootrapheadComponent } from './shared/navwhitebootraphead/navwhitebootraphead.component';
 
 
 
@@ -41,7 +42,7 @@ import { HomepageComponent } from './pages/homepage/homepage.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
+    // HomeComponent,
     DoorStepCarWashComponent,
     CarShoppeComponent,
     BookingComponent,
@@ -69,6 +70,7 @@ import { HomepageComponent } from './pages/homepage/homepage.component';
     ProductsComponent,
     OfferedproductsComponent,
     HomepageComponent,
+    NavwhitebootrapheadComponent,
   
     
     

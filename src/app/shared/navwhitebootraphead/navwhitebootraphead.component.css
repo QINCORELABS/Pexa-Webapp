@@ -1,0 +1,18 @@
+/* a.nav-item.nav-link{
+    color: var(#d09a2e);
+    font-weight: bold;
+    padding: 5vb;
+  
+} */
+  
+.navbar-light .navbar-nav .nav-link
+{
+    padding: 5vb;  
+    font-weight: bold;
+}
+.navbar-light .navbar-nav .nav-link.active-link
+{
+ color: black;
+    text-decoration: underline;
+    font-weight: bold;
+}
