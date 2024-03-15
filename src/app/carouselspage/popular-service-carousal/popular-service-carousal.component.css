@@ -26,8 +26,11 @@
   display: inline-block;
 }
 .imagediv img {
-  width: 100%;
+  width: 75%;
   height: 100%;
+  margin-left: 30px;
+  margin-bottom: 2%;
+  border-radius: 20px;
 }
 .link-button {
   text-decoration: none;
@@ -43,7 +46,7 @@
 
 .Basicwash {
   text-align: center;
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 500;
   line-height: 15px;
   letter-spacing: 0.05em;
@@ -123,7 +126,56 @@
     height: auto;
   }
   .service {
-    font-size: 12px;
+    font-size: 10px;
     line-height: 14px;
   }
+  .imagediv img {
+    width: 75%;
+    height: auto;
+    margin-left: 15px;
+    border-radius: 10px;
+    margin-bottom: 2%;
+  }
+  
+.carousel-slide {
+  width: 18%;
+  height: auto;
+  background-color: #faf6f6;
+  border-radius: 18px;
+  display: inline-block;
+  margin-top: 1px;
+  margin-right: 10px;
+  padding-bottom: 8px;
+}
+.Basicwash {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0.05em;
+}
+
+
+.Price {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+.button {
+  display: inline-block;
+  padding: 6px 12px; /* Decrease padding to make the button smaller */
+  background-color: #ff9800;
+  color: #fff;
+  font-size: 12px; /* Decrease font size */
+  font-weight: 400;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
 }

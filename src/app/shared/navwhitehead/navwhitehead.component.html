@@ -2,30 +2,51 @@
     <a class="navbar-brand" href="#">
         <div class="LogoEdit">
             <img src="assets/logo/logo 2.svg" alt="">
-          </div>
-          
+        </div>
     </a>
     <div class="icons">
         <li class="nav-item">
-            <div class="sticky-name">Hello, Jomon</div>
-        </li>
+            <div class="sticky-name" style="font-size: 20px; white-space: nowrap; color: #333; font-weight:100; text-align: center; padding: 10px;">Hello, Jomon</div>
 
-        
+
+        </li>
         <li class="nav-item">
-            <img src="assets/logo/sport-car.png" alt="" style="width: 42px; height: 42px;">
-            <div>Car</div> 
-            <i class="fa-solid fa-chevron-down"></i>
+            <img src="assets/logo/sport-car.png" alt="" style="width: 42px; height: 42px; margin-right: 4px;">
+            <div style="margin-right: 4px;">Car</div>
+            <i class="fa-solid fa-chevron-down" title="Add your car" data-bs-toggle="tooltip" data-bs-placement="top"></i>
         </li>
-
-
-       
+        
+        <li class="nav-item dropdown">
+            <a #dropdownToggle class="btn btn-secondary dropdown-toggle bg-transparent" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" style="color: black;" title="Your Location">
+                <div style="display: flex; align-items: center;">
+                    <img style="margin-right: 4px;" src="assets/logo/Location.svg" alt="">
+                    <div style="margin-right: 6px; color: black;">Kollam</div>
+                    <i class="fa-solid fa-chevron-down" style="color: black;"></i>
+                </div>
+            </a>
+            
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li>
+                <!-- Search bar -->
+                <form class="dropdown-item">
+                  <input type="text" class="form-control" placeholder="Search...">
+                </form>
+              </li>
+            </ul>
+          </li>
           
+        
+        
+        
+        
+        
+        
 
-        <li class="nav-item d-flex p-1">
-            <img src="assets/logo/Location.svg" alt="">
-            <div>Location</div> 
-            <i class="fa-solid fa-chevron-down"></i>
-        </li>
+
+
+
+
+
         <li class="nav-item">
             <i class="fa-solid fa-bell"></i>
         </li>
@@ -35,8 +56,29 @@
         <!-- <li class="nav-item">
             <i class="fa-solid fa-heart"></i>
         </li> -->
-        <li class="nav-item">
-            <i class="fa-solid fa-user"></i>
+        
+        <li class="nav-item dropdown">
+            <a #dropdownToggle class="btn btn-secondary dropdown-toggle bg-transparent" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-user" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" title="Profile"></i> 
+            </a>
+            
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-user"></i> My Account</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-shopping-bag"></i> My Order</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-heart"></i> My Wishlist</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-shopping-cart"></i> My Cart</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-sign-out"></i> Logout</a></li>
+            </ul>
         </li>
+        
+        
+          
+        
     </div>
 </div>
+<!-- <app-user></app-user> -->
+
+
+
+
+

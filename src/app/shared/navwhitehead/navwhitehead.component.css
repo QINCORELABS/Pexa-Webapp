@@ -1,105 +1,147 @@
 .container {
     width: 100%;
     height: auto;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     display: flex;
 }
+
 
 .icons {
     display: flex;
     padding-left: 65%;
     padding-top: 1%;
     list-style: none;
-
-
 }
 
-.sticky-name {
+
+/* .sticky-name {
     display: flex;
     font-size: 15px;
     color: #404042;
     position: sticky;
     top: 0;
-    /* Adjust the distance from the top as needed */
     z-index: 1000;
-    /* Adjust the z-index to ensure it's above other content if needed */
-    /* background-color: white; */
-    /* Optional: Set a background color to make it stand out */
     padding: 10px;
-    /* Optional: Add padding for better spacing */
     white-space: nowrap;
-    /* Ensure the text stays on a single line */
-}
+} */
+/* .sticky-name {
+    position: absolute;
+    top: 2;
+    right: 0;
+    margin-right: 25px;
+    padding: 10px;
+    z-index: 1000;
+    width: auto;
+    text-align: right;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 19px;
+    color: #333;
+ 
+    border-radius: 5px;
+    white-space: nowrap;
 
 
-/* styles.css */
+} */
+
+
+
+
 .nav-item {
     display: flex;
     align-items: center;
     padding: 0.1rem;
-    /* Adjust padding as needed */
 }
+
 
 .nav-item img,
 .nav-item i {
     margin-right: 0.2rem;
-    /* Adjust margin as needed */
 }
+
 
 .icons li {
-    margin-right: 15px;
-    /* Add spacing between icons */
+    margin-right: 1px;
 }
 
+
+/* Custom CSS to remove background color of the dropdown toggle button */
+.nav-item.dropdown .dropdown-toggle.bg-transparent {
+    background-color: transparent !important;
+}
+
+
+/* Custom CSS to style the icon with a dark color */
+.nav-item.dropdown .dropdown-toggle .fa-solid {
+    color: #333;
+    /* Adjust the color as needed */
+}
+
+
+/* Custom CSS to remove the border from the dropdown toggle button */
+.nav-item.dropdown .dropdown-toggle {
+    border: none !important;
+    box-shadow: none !important;
+    /* Optional: Remove box shadow */
+}
+
+
+/* Custom CSS to remove the downward caret icon */
+.nav-item.dropdown .dropdown-toggle::after {
+    display: none !important;
+}
+
+
+
+
+
+
 @media (max-width: 767px) {
+    .container {
+        width: 100%;
+        height: auto;
+        /* background-color: rgb(210, 189, 204); */
+        display: flex;
+    }
 
 
     .icons {
-        /* justify-content: center; */
-        /* Center icons */
         padding-left: 1px;
         padding-top: 15%;
-        /* background-color: black; */
     }
 
+
+    .container {
+        position: relative;
+    }
+
+
     .sticky-name {
-        position: fixed;
+        position: absolute;
         top: 0;
         right: 0;
-        /* Position at the right end */
-        /* background-color: white;  */
         padding: 10px;
-        /* Add padding as needed */
-
         z-index: 1000;
-        /* Ensure it's above other content */
         width: auto;
-        /* Let it adjust its width based on content */
         text-align: right;
-        /* Align text to the right */
         box-sizing: border-box;
-        /* Include padding and border in element's total width and height */
+        font-size: 14px;
+        margin-top: 20px;
+
+
+
+
     }
 
 
     .LogoEdit {
         margin-top: 10%;
-        /* Add 2% margin from the top */
         margin-bottom: 2%;
-        /* Add 2% margin from the bottom */
     }
 
-    /* styles.css */
+
     .nav-item {
         display: flex;
         align-items: center;
-        
-        /* Adjust padding as needed */
     }
-
-   
-
-
-
-
 }
