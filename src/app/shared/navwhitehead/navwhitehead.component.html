@@ -16,7 +16,7 @@
             <i class="fa-solid fa-chevron-down" title="Add your car" data-bs-toggle="tooltip" data-bs-placement="top"></i>
         </li>
         
-        <li class="nav-item dropdown">
+        <!-- <li class="nav-item dropdown">
             <a #dropdownToggle class="btn btn-secondary dropdown-toggle bg-transparent" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" style="color: black;" title="Your Location">
                 <div style="display: flex; align-items: center;">
                     <img style="margin-right: 4px;" src="assets/logo/Location.svg" alt="">
@@ -27,13 +27,28 @@
             
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
               <li>
-                <!-- Search bar -->
                 <form class="dropdown-item">
                   <input type="text" class="form-control" placeholder="Search...">
                 </form>
               </li>
             </ul>
-          </li>
+          </li> -->
+
+
+          <div class="example-accordion-item-header">
+            <mat-icon class="example-icon" style="color: #FFD700;">location_on</mat-icon>
+            <span *ngIf="!showSearch">{{ searchQuery }}</span>
+            <mat-icon class="example-icon" style="color: #b8860b;" (click)="toggleList()">keyboard_arrow_down</mat-icon>
+          </div>
+          
+          
+          <div *ngIf="showList">
+            <mat-form-field *ngIf="showSearch" class="search-box">
+              <input matInput placeholder="Search locations" [(ngModel)]="searchQuery" class="search-input" (blur)="toggleSearch()">
+            </mat-form-field>
+            <!-- You can populate the list with locations here -->
+          </div>
+
         
 
         <li class="nav-item">

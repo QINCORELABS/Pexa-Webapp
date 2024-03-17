@@ -13,10 +13,10 @@
     margin-top: 1%;
     margin-left: 3%;
 }
-.background{
+
+.background {
     width: 100%;
     height: auto;
-    /* background: #dd7575; */
 }
 
 .container {
@@ -25,17 +25,16 @@
     height: 45%;
     margin-top: 5%;
     border-radius: 25px;
-    
+    margin-bottom: 5%;
+
 }
 
 .delivarydate {
     display: flex;
     padding-top: 1%;
-
 }
 
 .delivarydate p {
-
     padding-left: 3%;
 }
 
@@ -48,14 +47,11 @@
 
 ul {
     list-style-type: none;
-    /* Remove default bullet style */
 }
 
 .thicker-bullet {
     position: relative;
-    /* Position the pseudo-element relative to the list item */
     padding-left: 20px;
-    /* Add space to the left of the list item for the bullet */
 }
 
 .thicker-bullet::before {
@@ -72,9 +68,7 @@ ul {
 
 .thicker-bullet p {
     color: black;
-    /* Set text color to black */
     margin-left: 25px;
-    /* Add space to the left of the paragraph to align with the bullet */
 }
 
 .location-emblem {
@@ -86,9 +80,10 @@ ul {
 .location-emblem li {
     margin-left: 2%;
 }
+
 .image-text-container {
     display: flex;
-    align-items: center; /* Align items vertically */
+    align-items: center;
 }
 
 .image-container {
@@ -96,34 +91,31 @@ ul {
 }
 
 .image-container img {
-    width: 40px; /* Set the width of the image */
-    height: auto; /* Let the height adjust automatically to maintain aspect ratio */
+    width: 40px;
+    height: auto;
 }
 
 .text {
-    margin-left: 10px; /* Add space between the image and text */
+    margin-left: 10px;
     color: #0D6EFD;
     margin-top: 3%;
 }
+
 .warning-button {
-    background-color: #ffc107; /* Warning color */
-    color: #212529; /* Text color */
-    border: 1px solid #ffc107; /* Border color */
-    padding: 10px 20px; /* Padding */
-    font-size: 16px; /* Font size */
-    cursor: pointer; /* Cursor style */
-    border-radius: 4px; /* Border radius */
+    background-color: #ffc107;
+    color: #212529;
+    border: 1px solid #ffc107;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
     transition: background-color 0.3s ease;
-    margin-left: 70%; /* Smooth transition */
+    margin-left: 70%;
 }
 
 .warning-button:hover {
-    background-color: #f2b90d; /* Hover color */
+    background-color: #f2b90d;
 }
-
-
-
-
 
 @media only screen and (max-width: 600px) {
     .container {
@@ -135,18 +127,14 @@ ul {
 
     .backbutton img {
         max-width: 45px;
-        /* Make the image responsive */
         height: auto;
-        /* Maintain aspect ratio */
         border: 1px solid #e3dbdb;
-        /* Add a border around the image */
         border-radius: 5px;
-        /* Add rounded corners to the border */
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-        /* Add a subtle shadow */
         margin-top: 5%;
         margin-left: 3%;
     }
+
     .locationBox {
         background-color: rgb(242, 244, 240);
         width: 100%;
@@ -159,22 +147,21 @@ ul {
         margin-top: 25%;
         margin-left: 0%;
     }
+
     .warning-button {
-        background-color: #ffc107; /* Warning color */
-        color: #212529; /* Text color */
-        border: 1px solid #ffc107; /* Border color */
-        padding: 9px 15px; /* Padding */
-        font-size: 16px; /* Font size */
-        cursor: pointer; /* Cursor style */
-        border-radius: 4px; /* Border radius */
+        background-color: #ffc107;
+        color: #212529;
+        border: 1px solid #ffc107;
+        padding: 9px 15px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 4px;
         transition: background-color 0.3s ease;
-        margin-left: 14%; /* Smooth transition */
+        margin-left: 14%;
         margin-top: 1%;
     }
     
     .warning-button:hover {
-        background-color: #efb70f; /* Hover color */
+        background-color: #efb70f;
     }
-    
-    
 }

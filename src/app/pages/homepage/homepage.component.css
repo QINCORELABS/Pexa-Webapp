@@ -175,7 +175,8 @@
 .discounttext {
   text-align: center;
   padding-bottom: 1px;
-  margin-bottom: 125px; /* Add padding for better readability */
+  margin-bottom: 125px;
+  /* Add padding for better readability */
 }
 
 
@@ -207,12 +208,14 @@
   .grid-container {
     grid-template-columns: 1fr;
     /* Display one column on mobile */
-    
+
   }
+
   .discounttext {
     text-align: center;
     padding-bottom: 1px;
-    margin-bottom: 1px; /* Add padding for better readability */
+    margin-bottom: 1px;
+    /* Add padding for better readability */
   }
 
 
@@ -478,12 +481,13 @@
 
 /* Media Query for Mobile View */
 @media only screen and(max-width: 600px) {
- 
+
   .text-container h2 {
     font-size: 1rem;
     /* Adjust font size for mobile view */
     line-height: 1.8rem;
   }
+
   .text-container {
     position: absolute;
     top: 10%;
@@ -493,7 +497,7 @@
     transform: translateY(-50%);
     /* Center vertically */
   }
-  
+
 }
 
 
@@ -535,7 +539,7 @@
 
 .partnership-text {
   font-family: 'Open Sans', sans-serif;
-  font-size: 40px;
+  font-size: 32px;
   font-weight: 700;
   line-height: 42px;
   letter-spacing: 0em;
@@ -553,6 +557,7 @@
   height: auto;
   background: #E7EBEE;
 }
+
 
 
 /* MiniboxEdit */
@@ -588,9 +593,12 @@
   width: 250px;
   height: 65px;
   border-radius: 25px;
-  display: flex; /* Set to display as flex containers */
-  justify-content: space-between; /* Distribute items evenly with space between */
-  align-items: center; /* Center items vertically */
+  display: flex;
+  /* Set to display as flex containers */
+  justify-content: space-between;
+  /* Distribute items evenly with space between */
+  align-items: center;
+  /* Center items vertically */
   border-color: #ffd900;
   border-width: 4px;
   background-color: white;
@@ -623,7 +631,7 @@ ul {
   display: flex;
   /* Display list items horizontally */
   align-items: center;
- 
+
 }
 
 
@@ -671,7 +679,7 @@ ul {
   /* Set font weight */
   text-align: center;
   /* Center-align text */
- 
+
 }
 
 
@@ -691,7 +699,7 @@ ul {
 
 
 
-.location  {
+.location {
   margin-bottom: 1px;
   padding-left: 380px;
 
@@ -700,9 +708,12 @@ ul {
 
 
 .custom-button009 {
-  padding: 12px 25px; /* Decrease padding to make the button smaller */
-  font-size: 14px; /* Decrease font size */
-  border-radius: 3px; /* Optionally adjust border-radius */
+  padding: 12px 25px;
+  /* Decrease padding to make the button smaller */
+  font-size: 14px;
+  /* Decrease font size */
+  border-radius: 3px;
+  /* Optionally adjust border-radius */
 }
 
 
@@ -710,20 +721,25 @@ ul {
 
 @media screen and (max-width: 767px) {
   .custom-button009 {
-    padding: 5px 5px; /* Decrease padding to make the button smaller */
-    font-size: 14px; /* Decrease font size */
-    border-radius: 14px; /* Optionally adjust border-radius */
+    padding: 5px 5px;
+    /* Decrease padding to make the button smaller */
+    font-size: 14px;
+    /* Decrease font size */
+    border-radius: 14px;
+    /* Optionally adjust border-radius */
   }
-  
+
   .custom-hr {
     border: 2px solid #FFD700;
     width: auto;
   }
-  .location  {
+
+  .location {
     margin-bottom: 1px;
     padding-left: 10px;
- 
+
   }
+
   .container {
     width: 50%;
     background-color: #F3F3F3;
@@ -735,6 +751,7 @@ ul {
     padding-left: 10px;
     padding-top: 145px;
   }
+
   .box {
     /* background-color: rgb(197, 27, 27); */
     width: 100%;
@@ -823,7 +840,7 @@ ul {
 
 @media only screen and (max-width: 600px) {
   .partnership-text {
-    font-size: 24px;
+    font-size: 18px;
     /* Adjust font size for mobile view */
     line-height: 28px;
     /* Adjust line height for mobile view if needed */
@@ -841,14 +858,17 @@ ul {
     font-family: Poppins;
     font-size: 20px;
     font-weight: 500;
-    line-height: 1; /* Adjust line-height to reduce vertical space */
+    line-height: 1;
+    /* Adjust line-height to reduce vertical space */
     letter-spacing: 0em;
     text-align: center;
     color: #0d0d0d;
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-}
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+  }
 
 
 
@@ -929,92 +949,39 @@ ul {
     margin-top: 3%;
     /* background-color: #a12929; */
   }
-
-
-
-
 }
 
-
-
-
-
-
-.comment-box-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  /* Adjust as needed */
-  gap: 20px;
-  /* Adjust the gap between comment boxes */
+.comment-container {
+  display: flex;
+  flex-wrap: nowrap;
+  /* Prevent wrapping */
+  overflow-x: auto;
+  /* Enable horizontal scrolling */
+  padding-bottom: 10px;
+  /* Add some space at the bottom to accommodate scrollbar */
 }
 
-
-.comment {
-  background-color: #f0f0f0;
-  /* Background color of each comment box */
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  /* Add a shadow effect */
+.comment-box {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 0 10px;
+  /* Adjust horizontal margin */
+  min-width: 300px;
+  background-color: #e3e5e8;
+  border-radius: 25px;
 }
 
-
-.avatar {
-  width: 50px;
-  /* Adjust as needed */
-  height: 50px;
-  /* Adjust as needed */
-  border-radius: 50%;
-  /* Make the avatar round */
-  margin-right: 10px;
-}
-
-
-.comment-text {
-  margin: 0;
-  /* Remove default margin */
+.custom-button {
+  /* Default button styles */
   font-size: 16px;
-  /* Adjust font size */
-  line-height: 1.5;
-  /* Adjust line height */
+  padding: 10px 20px;
+  margin-bottom: 25px;
 }
 
-
-/* Responsive adjustments for mobile devices */
-@media screen and (max-width: 768px) {
-  .comment-box-grid {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    /* Adjust as needed */
-    gap: 10px;
-    /* Adjust the gap between comment boxes */
-  }
-
-
-  .avatar {
-    width: 40px;
-    /* Adjust as needed */
-    height: 40px;
-    /* Adjust as needed */
-  }
-
-
-  .comment-text {
-    font-size: 10px;
-    /* Adjust font size */
-  }
-
-
-  .scrollable-container {
-    overflow-y: hidden;
-    /* Hide vertical scrollbar on mobile */
-    overflow-x: scroll;
-    /* Enable horizontal scrolling */
-    -webkit-overflow-scrolling: touch;
-    /* Smooth scrolling on iOS devices */
-    white-space: nowrap;
-    /* Prevent line breaks */
+@media screen and (max-width: 600px) {
+  /* Styles for mobile view */
+  .custom-button {
+    font-size: 20px; /* Increase font size */
+    padding: 15px 30px; /* Increase padding */
   }
 }
-
-
-

@@ -152,3 +152,36 @@
     margin-top: 5px;
   }
   
+
+  .example-accordion-item-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Adjust alignment as needed */
+  }
+  
+  .location-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .example-icon {
+    margin-right: 8px;
+  }
+  
+  .location-text {
+    margin-right: 8px;
+  }
+  
+  .search-box {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-field {
+    margin-right: 8px;
+  }
+  
+  .search-input {
+    width: 200px; /* Adjust width as needed */
+  }
+  
