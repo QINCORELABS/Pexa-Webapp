@@ -45,7 +45,7 @@
         <!-- <li class="nav-item">
             <i class="fa-solid fa-heart"></i>
         </li> -->
-        <li class="nav-item dropdown">
+        <!-- <li class="nav-item dropdown">
             <a #dropdownToggle class="btn btn-secondary dropdown-toggle bg-transparent" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="fa-solid fa-user" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" title="Profile"></i> 
             </a>
@@ -57,7 +57,63 @@
                 <li><a class="dropdown-item" href="#"><i class="fa-solid fa-shopping-cart"></i> My Cart</a></li>
                 <li><a class="dropdown-item" href="#"><i class="fa-solid fa-sign-out"></i> Logout</a></li>
             </ul>
-        </li>
+        </li> -->
+        
+        <!-- <mat-form-field class="custom-select" appearance="fill">
+            <mat-label>
+              <mat-icon (click)="select.open()" class="custom-icon">person</mat-icon>
+            </mat-label>
+            <mat-select #select class="custom-select-dropdown">
+              <mat-option value="my-account">
+                <i class="fa-solid fa-user"></i> My Account
+              </mat-option>
+              <mat-option value="my-order">
+                <i class="fa-solid fa-shopping-bag"></i> My Order
+              </mat-option>
+              <mat-option value="my-wishlist">
+                <i class="fa-solid fa-heart"></i> My Wishlist
+              </mat-option>
+              <mat-option value="my-cart">
+                <i class="fa-solid fa-shopping-cart"></i> My Cart
+              </mat-option>
+              <mat-option value="logout">
+                <i class="fa-solid fa-sign-out"></i> Logout
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+           -->
+      
+           <button mat-icon-button [matMenuTriggerFor]="menu">
+            <mat-icon class="small-icon">person</mat-icon>
+
+          </button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item>
+              <mat-icon>person</mat-icon> My Account
+            </button>
+            <button mat-menu-item>
+              <mat-icon >shopping_bag</mat-icon> My Order
+            </button>
+            <!-- <button mat-menu-item>
+              <mat-icon class="fas fa-heart"></mat-icon> My Wishlist
+            </button> -->
+            <button mat-menu-item>
+              <mat-icon>shopping_cart</mat-icon> My Cart
+            </button>
+            <button mat-menu-item>
+              <mat-icon >exit_to_app</mat-icon> Logout
+            </button>
+          </mat-menu>
+          
+          
+          
+         
+
+
+
+
+          
+
         
     </div>
 </div>

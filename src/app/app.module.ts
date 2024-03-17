@@ -34,7 +34,8 @@ import { ProductsComponent } from './Products/products/products.component';
 import { OfferedproductsComponent } from './Products/offeredproducts/offeredproducts.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { NavwhitebootrapheadComponent } from './shared/navwhitebootraphead/navwhitebootraphead.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material/material.module';
 
 
 
@@ -78,9 +79,10 @@ import { NavwhitebootrapheadComponent } from './shared/navwhitebootraphead/navwh
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,FormsModule
- 
+    HttpClientModule,FormsModule, BrowserAnimationsModule,
     
+ 
+    MaterialModule
     
     
   ],
