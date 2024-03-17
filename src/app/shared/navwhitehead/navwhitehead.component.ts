@@ -6,10 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navwhitehead.component.css']
 })
 export class NavwhiteheadComponent implements OnInit {
-
-  constructor() { }
-
   ngOnInit(): void {
+    throw new Error('Method not implemented.');
   }
-
+ 
 }
