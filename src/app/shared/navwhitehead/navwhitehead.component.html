@@ -8,12 +8,11 @@
         <li class="nav-item">
             <div class="sticky-name" style="font-size: 20px; white-space: nowrap; color: #333; font-weight:100; text-align: center; padding: 10px;">Hello, Jomon</div>
 
-
         </li>
         <li class="nav-item">
-            <img src="assets/logo/sport-car.png" alt="" style="width: 42px; height: 42px; margin-right: 4px;">
-            <div style="margin-right: 4px;">Car</div>
-            <i class="fa-solid fa-chevron-down" title="Add your car" data-bs-toggle="tooltip" data-bs-placement="top"></i>
+            <img src="assets/logo/sport-car.png" routerLink="/model" alt="" style="width: 42px; height: 42px; margin-right: 4px;">
+            <div style="margin-right: 4px;cursor: pointer;" routerLink="/makes">Car</div>
+            <i class="fa-solid fa-chevron-down" routerLink="/makes" title="Add your car" data-bs-toggle="tooltip" data-bs-placement="top" style="cursor: pointer;"></i>
         </li>
         
         <!-- <li class="nav-item dropdown">
@@ -103,9 +102,10 @@
 
           </button>
           <mat-menu #menu="matMenu">
-            <button mat-menu-item>
+            <button mat-menu-item routerLink="/register">
               <mat-icon>person</mat-icon> My Account
             </button>
+            
             <button mat-menu-item>
               <mat-icon >shopping_bag</mat-icon> My Order
             </button>

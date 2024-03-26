@@ -1,4 +1,25 @@
 import { Component, OnInit } from '@angular/core';
+import { OfferedService } from 'src/app/Services/offered.service';
+
+interface HomeConsoleData {
+  offered: any;
+  resultData: {
+    offered: {
+      productId: {
+        _id: string;
+        name: string;
+        price: number;
+        offerPrice: number;
+
+        sub_category_id: {
+          name: string;
+          images: string[];
+        };
+        imageURL: string[];
+      };
+    }[];
+  };
+}
 
 @Component({
   selector: 'app-offeredproducts',
@@ -6,28 +27,32 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./offeredproducts.component.css']
 })
 export class OfferedproductsComponent implements OnInit {
-  products = [
-    { name: 'Product 1', price: 10, imageUrl: 'assets/logo/c.svg' },
-    { name: 'Product 2', price: 20, imageUrl: 'assets/product2.jpg' },
-    { name: 'Product 3', price: 15, imageUrl: 'assets/product3.jpg' },
-    { name: 'Product 1', price: 10, imageUrl: 'assets/product1.jpg' },
-    { name: 'Product 2', price: 20, imageUrl: 'assets/product2.jpg' },
-    { name: 'Product 3', price: 15, imageUrl: 'assets/product3.jpg' },
-    { name: 'Product 1', price: 10, imageUrl: 'assets/product1.jpg' },
-    { name: 'Product 2', price: 20, imageUrl: 'assets/product2.jpg' },
-    { name: 'Product 3', price: 15, imageUrl: 'assets/product3.jpg' },
-    { name: 'Product 1', price: 10, imageUrl: 'assets/product1.jpg' },
-    { name: 'Product 2', price: 20, imageUrl: 'assets/product2.jpg' },
-    { name: 'Product 3', price: 15, imageUrl: 'assets/product3.jpg' },
-    // Add more products as needed
-  ];
-  addToCart(product: any) {
-    // Implement your logic to add the product to the cart here
-    console.log('Product added to cart:', product);
+  offered: any;
+  addToCart(arg0: any) {
+    throw new Error('Method not implemented.');
   }
-  constructor() { }
+  homeconsoledata!: HomeConsoleData; // Update the type of homeconsoledata
+
+  offereddataui!: {
+    offered: {
+      productId: {
+        offerPrice: number; _id: string; name: string; price: number; sub_category_id: { name: string; images: string[]; }; imageURL: string[];
+      };
+    }[];
+  };
+
+  constructor(private offeredService: OfferedService) { }
 
   ngOnInit(): void {
+    this.fetchData();
   }
 
+
+
+  fetchData() {
+    this.offeredService.offered().subscribe((response: HomeConsoleData) => {
+      this.offereddataui = response.resultData;; // Assign the response to the homeconsoledata property
+      console.log(this.offereddataui); // Log the fetched data for testing
+    });
+  }
 }

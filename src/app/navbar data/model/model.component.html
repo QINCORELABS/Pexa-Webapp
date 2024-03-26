@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="center">
+        <div class="title">Select Your Car</div>
+      </div>
+      
+    <div class="car-container">
+      <div *ngFor="let car of carsModel" class="car">
+  <h2>{{ car.name }}</h2>
+  <div class="image-container">
+    <div *ngFor="let imageURL of car.imageURL" class="image">
+      <img [src]="imageURL" alt="Car Image" width="100" height="100">
+    </div>
+  </div>
+</div>
+
+    </div>
+  
+</div>

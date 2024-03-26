@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="product-grid">
+        <div class="product-card" *ngFor="let product of viewall">
+            <img [src]="product.thumbURL[0]" alt="{{ product.name }} Thumbnail" class="product-image">
+            <div class="product-details">
+                <h3 class="product-name">{{ product.name }}</h3>
+                <s class="originalprice">{{ product.price }}</s>
+                <p class="product-price">Price: {{ product.offerPrice }}</p>
+                <button class="buy-button">+</button>
+            </div>
+        </div>
+    </div>
+</div>

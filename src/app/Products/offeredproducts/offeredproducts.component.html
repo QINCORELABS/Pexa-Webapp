@@ -1,15 +1,19 @@
+<div *ngIf="offereddataui">
 <div class="container">
     <div class="product-grid">
-        <div class="product-card" *ngFor="let product of products">
-          <img [src]="product.imageUrl" alt="{{ product.name }}" class="product-image">
+        <div class="product-card" *ngFor="let item of offereddataui.offered">
+      <img [src]="item.productId.imageURL[0]" alt="Product Image" class="product-image">
+
           <div class="product-details">
-            <h3 class="product-name">{{ product.name }}</h3>
-            <p class="product-price">Price: ${{ product.price }}</p>
-            <button (click)="addToCart(product)" class="add-to-cart-btn">+</button>
+            <h3 class="product-name">{{ item.productId.name  }}</h3>
+            <s class="originalprice">{{ item.productId.offerPrice }}</s>
+            <p class="product-price">Price: {{  item.productId.price }}</p>
+            <button (click)="addToCart(offered)" class="add-to-cart-btn buy-button">+</button>
           </div>
         </div>
       </div>
-      
-      
-      
 </div>
+</div>
+
+
+

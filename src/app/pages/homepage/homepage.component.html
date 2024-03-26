@@ -72,13 +72,25 @@
   <app-pexa-service-carousel></app-pexa-service-carousel>
   <div class="emptyspace"></div>
   <app-popular-service-carousal></app-popular-service-carousal>
-  <div class="featuredProduct">
-    <h3 class="featured-title">Featured Products</h3>
-    <h6 class="see-all"><a [routerLink]="'/Products'" class="link-button">See all Products</a></h6>
+
+  <div class="offeredProducts">
+    <div class="featured-title">Offered Products</div>
+    <div class="see-allfeatured"><a [routerLink]="'/View_all_offproducts'">See all Products</a></div>
+  </div>
+  
 
 
+
+  <app-offered-producs></app-offered-producs>
+
+
+  <div class="offeredProducts">
+    <div class="featured-title">Featured Products</div>
+    <div class="see-allfeatured"><a [routerLink]="'/Products'" >See all Products</a></div>
   </div>
   <app-featuredproducts></app-featuredproducts>
+
+
   <div class="arrowScroll">
     <h1 class="left-arrow">&lt;</h1>
     <h1 class="right-arrow">&gt;</h1>

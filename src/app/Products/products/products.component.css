@@ -1,16 +1,77 @@
-.container{
-    width:100%;
-    height: 750px;
-    background: #929090;
-    margin-top: 2%;
+.container {
+  width: 100%;
+  height: auto;
+  /* background: #929090; */
+  margin-top: 2%;
+  position: relative; /* Add position relative for absolute positioning */
 }
+
 .product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  position: relative; /* Add position relative for absolute positioning */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.product-image {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.product-details {
+  text-align: center;
+}
+
+.product-name {
+  margin-top: 10px;
+  font-size: 18px;
+  width: 100%;
+  height: 55px;
+  /* background-color: #007bff; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.product-price {
+  font-size: 20px;
+  color: #000000;
+}
+
+.buy-button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buy-button:hover {
+  background-color: #0056b3;
+}
+
+
+@media screen and (max-width: 600px) {
+
+  
+  .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjusted column width for mobile */
+    gap: 8px; /* Reduced gap for mobile */
   }
   
   .product-card {
+    position: relative;
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 10px;
@@ -18,6 +79,7 @@
   
   .product-image {
     width: 100%;
+    height: auto; /* Adjusted height to maintain aspect ratio */
     max-height: 200px;
     object-fit: cover;
   }
@@ -27,12 +89,24 @@
   }
   
   .product-name {
-    margin-top: 10px;
-    font-size: 18px;
+    width: 100%;
+    height: 80px;
+    margin-top: 5px;
+    font-size: 14px; /* Reduced font size for mobile */
+    height: 30px; /* Reduced height for mobile */
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   
   .product-price {
-    font-size: 16px;
-    color: #666;
+    font-size: 16px; /* Reduced font size for mobile */
   }
   
+  .buy-button {
+    position: absolute;
+    bottom: 5px; /* Adjusted position for mobile */
+    right: 5px; /* Adjusted position for mobile */
+    padding: 6px 10px; /* Adjusted padding for mobile */
+    font-size: 14px; /* Reduced font size for mobile */
+  }
+}

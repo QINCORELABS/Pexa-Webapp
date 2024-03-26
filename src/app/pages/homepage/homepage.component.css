@@ -5,7 +5,6 @@
   background: #F3F3F3;
 }
 
-
 .centered-container {
   position: absolute;
   top: 50%;
@@ -14,20 +13,17 @@
   text-align: center;
 }
 
-
 .centered-container h4 {
   font-size: 24px;
   font-weight: 400;
   margin-bottom: 10px;
 }
 
-
 .centered-container h1 {
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 20px;
 }
-
 
 .subheading {
   font-family: Poppins;
@@ -38,7 +34,6 @@
   text-align: center;
 }
 
-
 .main-heading {
   margin-top: 3%;
   font-family: Open Sans;
@@ -48,11 +43,6 @@
   letter-spacing: 0.05em;
   text-align: left;
 }
-
-
-
-
-
 
 .container_side {
   width: 91%;
@@ -65,44 +55,26 @@
   border-radius: 15px;
 }
 
-
 .container ul {
   list-style-type: none;
   padding: 0;
 }
-
 
 .custom-hr {
   border: 2px solid #FFD700;
   width: 750px;
 }
 
-
-
-
 .header-container {
   display: flex;
   margin-top: 3%;
 }
-
 
 .header-title {
   margin-left: 3%;
   margin-top: 2%;
   font-family: 'Popins', sans-serif;
 }
-
-
-.see-all {
-  color: #0D6EFD;
-  margin-top: 3%;
-  margin-left: 72%;
-}
-
-
-
-
-
 
 .grid-container {
   display: grid;
@@ -112,43 +84,52 @@
   /* Add gap between grid items */
 }
 
-
 .grid-item {
   padding: 20px;
   background-color: #f0f0f0;
   text-align: center;
 }
 
-
 .emptyspace {
   margin-top: 3%;
 }
 
-
-.featuredProduct {
-  display: flex;
+.offeredProducts {
+  /* Add any necessary styles for the container */
 }
-
 
 .featured-title {
   font-family: 'Open Sans';
-  font-size: 3vw;
+  font-size: 25px;
   font-weight: 400;
   line-height: 4.5vw;
   letter-spacing: 0;
   text-align: left;
+}
 
+.see-allfeatured {
+  font-family: 'Open Sans';
+  font-size: 22px;
+  letter-spacing: 0;
+  text-align: right;
+  text-decoration: none;
+  white-space: nowrap;
+}
 
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+  .featured-title {
+    font-size: 15px;
+    margin-bottom: 10px; /* Add some space between title and link */
+  }
+
+  .see-allfeatured ,a {
+    font-size: 12px;
+    text-align: right;
+  }
 }
 
 
-.see-all {
-  color: #0D6EFD;
-  margin-top: 3%;
-  margin-left: 65%;
-
-
-}
 
 
 .arrowScroll {
@@ -157,20 +138,15 @@
   height: 12%;
 }
 
-
 .left-arrow {
   text-align: left;
   margin-right: auto;
 }
 
-
 .right-arrow {
   text-align: right;
   margin-left: auto;
 }
-
-
-
 
 .discounttext {
   text-align: center;
@@ -179,21 +155,15 @@
   /* Add padding for better readability */
 }
 
-
-
-
-
 .custom-button {
   font-size: 1.5vw;
   padding: 1vw 2vw;
   border-radius: 1vw;
 }
 
-
 .custom-button .arrow {
   font-weight: bold;
 }
-
 
 .custom-button {
   font-size: 1.5vw;
@@ -202,9 +172,10 @@
   border-radius: 1vw;
 }
 
-
 /* Media query for mobile devices */
 @media screen and (max-width: 768px) {
+
+  
   .grid-container {
     grid-template-columns: 1fr;
     /* Display one column on mobile */
@@ -232,11 +203,6 @@
   }
 
 
-  .see-all {
-    color: #0D6EFD;
-    margin-top: 3%;
-    margin-left: 30%;
-  }
 
 
   .emptyspace {
@@ -259,7 +225,6 @@
 
 }
 
-
 .book-now-text {
   font-family: Open Sans;
   font-size: 29px;
@@ -268,7 +233,6 @@
   letter-spacing: 0em;
   text-align: left;
 }
-
 
 .plants-text {
   font-family: Poppins;
@@ -284,7 +248,6 @@
   /* Add padding for spacing */
 }
 
-
 .btn-yellow {
   color: #0c0c0c;
   /* Text color */
@@ -295,16 +258,12 @@
   font-weight: 400;
 }
 
-
 .btn-yellow:hover {
   background-color: #FFDF00;
   /* Yellow background color on hover */
   border-color: #FFDF00;
   /* Yellow border color on hover */
 }
-
-
-
 
 .border-container {
   border: 2px solid black;
@@ -314,7 +273,6 @@
   padding: 20px;
   /* Add padding for spacing */
 }
-
 
 .custom-button {
   background-color: #a12929;
@@ -332,12 +290,10 @@
   /* Background color */
 }
 
-
 .custom-button:hover {
   background-color: #CCCCCC;
   /* Lighter background color on hover */
 }
-
 
 .hot-deals-text {
   font-family: Poppins;
@@ -347,11 +303,6 @@
   letter-spacing: 0em;
   text-align: center;
 }
-
-
-
-/* //////////////// */
-
 
 .scroll-carousel {
   display: flex;
@@ -365,7 +316,6 @@
   /* Hides scrollbar on Edge and IE */
 }
 
-
 .scroll-card {
   flex: 0 0 auto;
   width: 300px;
@@ -376,28 +326,23 @@
   overflow: hidden;
 }
 
-
 .card-image {
   width: 100%;
   height: auto;
 }
 
-
 .card-content {
   padding: 20px;
 }
-
 
 .card-title {
   margin: 0;
 }
 
-
 .card-description {
   margin-top: 5px;
   margin-bottom: 10px;
 }
-
 
 .buy-btn {
   display: block;
@@ -421,12 +366,10 @@
   /* Moves the button to the right */
 }
 
-
 .buy-btn:hover {
   background-color: #1100fd;
   /* Darker shade of warning color on hover */
 }
-
 
 .imagecontainer {
   position: relative;
@@ -436,13 +379,11 @@
   /* Allow height to adjust according to content */
 }
 
-
 .imageseteup {
   width: 100%;
   height: auto;
   /* Ensure image fills container */
 }
-
 
 .text-container {
   position: absolute;
@@ -453,7 +394,6 @@
   transform: translateY(-50%);
   /* Center vertically */
 }
-
 
 .text-container h2 {
   font-family: 'Open Sans', sans-serif;
@@ -467,7 +407,6 @@
   margin-bottom: 0;
 }
 
-
 .discounttext {
   font-family: Poppins;
   font-size: 30px;
@@ -477,7 +416,6 @@
   text-align: center;
   color: #000000;
 }
-
 
 /* Media Query for Mobile View */
 @media only screen and(max-width: 600px) {
@@ -498,8 +436,9 @@
     /* Center vertically */
   }
 
-}
 
+
+}
 
 .testimonial-text {
   font-family: 'Open Sans', sans-serif;
@@ -511,13 +450,11 @@
   margin-top: 2%;
 }
 
-
 .container5 {
   width: 100%;
   height: auto;
   /* background: yellow; */
 }
-
 
 .what-clients-say {
   font-family: 'Open Sans', sans-serif;
@@ -528,14 +465,12 @@
   text-align: center;
 }
 
-
 .subcontainer5 {
   width: 100%;
   height: auto;
   /* background: #ab1414; */
   display: flex;
 }
-
 
 .partnership-text {
   font-family: 'Open Sans', sans-serif;
@@ -550,15 +485,12 @@
 
 }
 
-
 .container6 {
   margin-top: 3%;
   width: 100%;
   height: auto;
   background: #E7EBEE;
 }
-
-
 
 /* MiniboxEdit */
 /* from here to 653*/
@@ -576,7 +508,6 @@
 
 }
 
-
 .box {
   display: flex;
   align-items: center;
@@ -584,9 +515,6 @@
 
 
 }
-
-
-
 
 .inner-box1,
 .inner-box2 {
@@ -605,20 +533,15 @@
   cursor: pointer;
 }
 
-
-
-
 .inner-box1 {
   margin-left: 200px;
   /* Adjust margin as needed */
 }
 
-
 .inner-box2 {
   margin-left: 45px;
   /* Adjust margin as needed */
 }
-
 
 .inner-box1,
 ul {
@@ -634,7 +557,6 @@ ul {
 
 }
 
-
 .inner-box2,
 ul {
   list-style: none;
@@ -648,18 +570,15 @@ ul {
   align-items: center;
 }
 
-
 .inner-box1 li {
   margin-right: 10px;
   /* Add spacing between list items */
 }
 
-
 .inner-box2 li {
   margin-right: 10px;
   /* Add spacing between list items */
 }
-
 
 .box-image {
   width: 40px;
@@ -667,7 +586,6 @@ ul {
   margin-top: 12px;
   margin-left: 25px;
 }
-
 
 .list-text1 {
   /* Add your desired text styles here */
@@ -682,7 +600,6 @@ ul {
 
 }
 
-
 .list-text2 {
   /* Add your desired text styles here */
   font-size: 14px;
@@ -696,16 +613,12 @@ ul {
   margin-left: 25px;
 }
 
-
-
-
 .location {
   margin-bottom: 1px;
   padding-left: 380px;
 
 
 }
-
 
 .custom-button009 {
   padding: 12px 25px;
@@ -715,9 +628,6 @@ ul {
   border-radius: 3px;
   /* Optionally adjust border-radius */
 }
-
-
-
 
 @media screen and (max-width: 767px) {
   .custom-button009 {
@@ -835,9 +745,6 @@ ul {
   }
 }
 
-
-
-
 @media only screen and (max-width: 600px) {
   .partnership-text {
     font-size: 18px;
@@ -885,15 +792,6 @@ ul {
 
   }
 }
-
-
-
-
-
-
-
-
-
 
 /* This is for mobile view */
 @media only screen and (max-width: 600px) {
@@ -979,9 +877,12 @@ ul {
 }
 
 @media screen and (max-width: 600px) {
+
   /* Styles for mobile view */
   .custom-button {
-    font-size: 20px; /* Increase font size */
-    padding: 15px 30px; /* Increase padding */
+    font-size: 20px;
+    /* Increase font size */
+    padding: 15px 30px;
+    /* Increase padding */
   }
 }

@@ -1,11 +1,31 @@
 
 .container-3 {
+  margin-top: 2%;
   width: 100%;
   height:auto;
   overflow:hidden; 
   display:flex; 
   justify-content:center; 
 }
+.card-price{
+  font-size:large;
+  font-weight: 500;
+  /* white-space: nowrap; */
+  font-family: Roboto 'Open Sans', sans-serif;
+  color: #000000;
+}
+.originalprice {
+  color: #716969;
+  margin-left: 50px;
+}
+
+.pricetag {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
 
 .scroll-carousel {
   display: flex;
@@ -26,9 +46,11 @@
   overflow: hidden;
 }
 
+
+
 .card-image {
-  width: 50%;
-  margin-left: 55px;
+  width: 75%;
+  margin-left: 40px;
   height: auto;
 }
 
@@ -38,10 +60,18 @@
 
 .card-title {
   margin: 0;
-  font-size: 22px;
-  font-weight: 400;
-  white-space: nowrap;
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  /* white-space: nowrap; */
+  font-family: Roboto 'Open Sans', sans-serif;
+  padding: 0,0,0,5px;
+  /* background-color: #1100fd; */
+  width: 100%;
+  height: 85px;
+  /* white-space: nowrap; */
+  /* Add ellipsis for overflow text */
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card-description {
@@ -78,8 +108,16 @@
     margin: 0;
     font-size: 15px;
     font-weight: 500;
-    white-space: nowrap;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* white-space: nowrap; */
+    font-family: Roboto 'Open Sans', sans-serif;
+    padding: 0,0,0,5px;
+    /* background-color: #1100fd; */
+    width: 100%;
+    height: 85px;
+    /* white-space: nowrap; */
+  /* Add ellipsis for overflow text */
+  overflow: hidden;
+  text-overflow: ellipsis;
   }
   .card-description {
     margin-top: 5px;
@@ -94,6 +132,15 @@
     border: 1px solid #ccc;
     border-radius: 8px;
     overflow: hidden;
+  }
+  .card-image {
+    width: 75%;
+    margin-left: 20px;
+    height: auto;
+  }
+  .originalprice {
+    color: #716969;
+    margin-left: 3px;
   }
   
 }

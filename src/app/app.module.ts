@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { RouterModule } from '@angular/router';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 // import { HomeComponent } from './pages/home/home.component';
@@ -12,7 +13,6 @@ import { SupportComponent } from './pages/support/support.component';
 import { FranchiseComponent } from './pages/franchise/franchise.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
-import { LoginComponent } from './pages/login/login.component';
 import { PexaServiceCarouselComponent } from './carouselspage/pexa-service-carousel/pexa-service-carousel.component';
 import { PopularServiceCarousalComponent } from './carouselspage/popular-service-carousal/popular-service-carousal.component';
 import { CarwashingTableComponent } from './pages/carwashing-table/carwashing-table.component';
@@ -34,8 +34,13 @@ import { ProductsComponent } from './Products/products/products.component';
 import { OfferedproductsComponent } from './Products/offeredproducts/offeredproducts.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { NavwhitebootrapheadComponent } from './shared/navwhitebootraphead/navwhitebootraphead.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
+import { LoginPageComponent } from './Auth/login-page/login-page.component';
+import { LoginOtpComponent } from './Auth/login-otp/login-otp.component';
+import { ViewallproductsComponent } from './Products/viewallproducts/viewallproducts.component';
+import { MakeComponent } from './navbar data/make/make.component';
+import { ModelComponent } from './navbar data/model/model.component';
+
 
 
 
@@ -52,7 +57,6 @@ import { MaterialModule } from './material/material.module';
     FranchiseComponent,
     NavbarComponent,
     FooterComponent,
-    LoginComponent,
     PexaServiceCarouselComponent,
     PopularServiceCarousalComponent,
     CarwashingTableComponent,
@@ -72,19 +76,26 @@ import { MaterialModule } from './material/material.module';
     OfferedproductsComponent,
     HomepageComponent,
     NavwhitebootrapheadComponent,
-  
+    LoginPageComponent,
+    LoginOtpComponent,
+    ViewallproductsComponent,
+    MakeComponent,
+    ModelComponent,
     
-    
+
+
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,FormsModule, BrowserAnimationsModule,
-    
- 
+    HttpClientModule,
+    FormsModule,
     MaterialModule
-    
-    
+
+
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]

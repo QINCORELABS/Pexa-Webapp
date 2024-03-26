@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FeaturedproductService } from 'src/app/Services/featuredproduct.service';
 
 @Component({
   selector: 'app-products',
@@ -6,25 +7,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./products.component.css']
 })
 export class ProductsComponent implements OnInit {
-
-  products = [
-    { name: 'Product 1', price: 10, imageUrl: 'assets/logo/Mask group.svg' },
-    { name: 'Product 2', price: 20, imageUrl: 'assets/product2.jpg' },
-    { name: 'Product 3', price: 15, imageUrl: 'assets/product3.jpg' },
-    { name: 'Product 1', price: 10, imageUrl: 'assets/product1.jpg' },
-    { name: 'Product 2', price: 20, imageUrl: 'assets/product2.jpg' },
-    { name: 'Product 3', price: 15, imageUrl: 'assets/product3.jpg' },
-    { name: 'Product 1', price: 10, imageUrl: 'assets/product1.jpg' },
-    { name: 'Product 2', price: 20, imageUrl: 'assets/product2.jpg' },
-    { name: 'Product 3', price: 15, imageUrl: 'assets/product3.jpg' },
-    { name: 'Product 1', price: 10, imageUrl: 'assets/product1.jpg' },
-    { name: 'Product 2', price: 20, imageUrl: 'assets/product2.jpg' },
-    { name: 'Product 3', price: 15, imageUrl: 'assets/product3.jpg' },
-    // Add more products as needed
-  ];
-  constructor() { }
+  featuredProducts: any[] = [];
+  
+  constructor(private featuredproductService: FeaturedproductService) { }
 
   ngOnInit(): void {
+    this.fetchFeaturedProducts();
   }
 
-}
+  fetchFeaturedProducts() {
+    this.featuredproductService.getfeaturedProductCategory().subscribe(response => {
+      this.featuredProducts = response.resultData;
+      this.featuredProducts.forEach(product => {
+        // Split the description by space and take the first 5 words
+        product.productId.shortDescription = product.productId.description.split(' ').slice(0, 5).join(' ');
+      });
+    });
+  }}

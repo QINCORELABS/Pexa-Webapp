@@ -1,98 +1,44 @@
+<div *ngIf="offereddataui">
 <div class="container-3">
-
-
     <div class="scroll-carousel">
+        <div class="scroll-card" *ngFor="let item of offereddataui.offered">
+        <!-- <img src="assets/logo/Mask group.svg" alt="Placeholder Image" class="card-image"> -->
+        <img [src]="item.productId.imageURL[0]" alt="Product Image" class="card-image">
 
-
-      <div class="scroll-card">
-        <img src="assets/logo/Mask group.svg" alt="Placeholder Image" class="card-image">
         <div class="card-content">
-          <h3 class="card-title">Pexa Degreaser(1L)</h3>
-          <p class="card-description">Description of Product 1</p>
-          <div style="display: flex; justify-content: space-between; align-items: center;">
-            <s>250</s>
-            <h3 class="card-price">155</h3>
+          <div class="card-title">{{ item.productId.name  }}</div>
+          <!-- <p class="card-description">Description of Product 1</p> -->
+        
+          <div style="display: flex;  ">
+            <s> <div class="originalcutting">{{  item.productId.price }}</div></s>
+         
+            <div class="card-price">{{ item.productId.offerPrice }}</div>
+        
             <a style="padding-top: 3%;" href="#" class="buy-btn">+</a>
           </div>
         </div>
       </div>
-
-
-      <div class="scroll-card">
-        <img src="assets/logo/Mask group.svg" alt="Placeholder Image" class="card-image">
-        <div class="card-content">
-          <div class="card-title">Pexa Degreaser(1L)</div>
-          <div class="card-description">Description of Product 1</div>
-          <div style="display: flex; justify-content: space-between; align-items: center;">
-            <s>250</s>
-            <h3 class="card-price">155</h3>
-            <a style="padding-top: 3%;" href="#" class="buy-btn">+</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="scroll-card">
-        <img src="assets/logo/Mask group.svg" alt="Placeholder Image" class="card-image">
-        <div class="card-content">
-          <h3 class="card-title">Pexa Degreaser(1L)</h3>
-          <p class="card-description">Description of Product 1</p>
-          <div style="display: flex; justify-content: space-between; align-items: center;">
-            <s>250</s>
-            <h3 class="card-price">155</h3>
-            <a style="padding-top: 3%;" href="#" class="buy-btn">+</a>
-          </div>
-        </div>
-      </div>
-      <div class="scroll-card">
-        <img src="assets/logo/Mask group.svg" alt="Placeholder Image" class="card-image">
-        <div class="card-content">
-          <h3 class="card-title">Pexa Degreaser(1L)</h3>
-          <p class="card-description">Description of Product 1</p>
-          <div style="display: flex; justify-content: space-between; align-items: center;">
-            <s>250</s>
-            <h3 class="card-price">155</h3>
-            <a style="padding-top: 3%;" href="#" class="buy-btn">+</a>
-          </div>
-        </div>
-      </div>
-      <div class="scroll-card">
-        <img src="assets/logo/Mask group.svg" alt="Placeholder Image" class="card-image">
-        <div class="card-content">
-          <h3 class="card-title">Pexa Degreaser(1L)</h3>
-          <p class="card-description">Description of Product 1</p>
-          <div style="display: flex; justify-content: space-between; align-items: center;">
-            <s>250</s>
-            <h3 class="card-price">155</h3>
-            <a style="padding-top: 3%;" href="#" class="buy-btn">+</a>
-          </div>
-        </div>
-      </div>
-      <div class="scroll-card">
-        <img src="assets/logo/Mask group.svg" alt="Placeholder Image" class="card-image">
-        <div class="card-content">
-          <h3 class="card-title">Pexa Degreaser(1L)</h3>
-          <p class="card-description">Description of Product 1</p>
-          <div style="display: flex; justify-content: space-between; align-items: center;">
-            <s>250</s>
-            <h3 class="card-price">155</h3>
-            <a style="padding-top: 3%;" href="#" class="buy-btn">+</a>
-          </div>
-        </div>
-      </div>
-      <div class="scroll-card">
-        <img src="assets/logo/Mask group.svg" alt="Placeholder Image" class="card-image">
-        <div class="card-content">
-          <h3 class="card-title">Pexa Degreaser(1L)</h3>
-          <p class="card-description">Description of Product 1</p>
-          <div style="display: flex; justify-content: space-between; align-items: center;">
-            <s>250</s>
-            <h3 class="card-price">155</h3>
-            <a style="padding-top: 3%;" href="#" class="buy-btn">+</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Add more cards as needed -->
     </div>
-
   </div>
+  </div>
+<!-- 
+  <div *ngIf="offereddataui">
+    <div class="container">
+        <div class="product-grid">
+            <div class="product-card" *ngFor="let item of offereddataui.offered">
+          <img [src]="item.productId.imageURL[0]" alt="Product Image" class="product-image">
+    
+              <div class="product-details">
+                <h3 class="product-name">{{ item.productId.name  }}</h3>
+                <s class="originalprice">{{ item.productId.offerPrice }}</s>
+                <p class="product-price">Price: {{  item.productId.price }}</p>
+                <button (click)="addToCart(offered)" class="add-to-cart-btn buy-button">+</button>
+              </div>
+            </div>
+          </div>
+    </div>
+    </div> -->
+    
+    
+    
+    
