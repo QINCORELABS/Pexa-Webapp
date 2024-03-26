@@ -15,8 +15,6 @@ import { MatExpansionModule } from '@angular/material/expansion';
 
 @NgModule({
   declarations: [
-    RegistrationFormComponent,
-    OtpPageComponent,
   ],
   imports: [
     MatButtonModule,
@@ -39,8 +37,6 @@ import { MatExpansionModule } from '@angular/material/expansion';
     MatSlideToggleModule,
     MatMenuModule,
     MatIconModule,
-    RegistrationFormComponent,
-    OtpPageComponent,
     MatExpansionModule,
 
   ]

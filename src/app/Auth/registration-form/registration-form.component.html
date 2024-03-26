@@ -5,8 +5,9 @@
         <p>
           <mat-form-field>
             <input type="text" matInput placeholder="Phone Number" formControlName="phoneNumber">
-            <mat-error *ngIf="form.get('phoneNumber').hasError('required')">Phone Number is required</mat-error>
-            <mat-error *ngIf="form.get('phoneNumber').hasError('pattern')">Invalid phone number</mat-error>
+            <mat-error *ngIf="form?.get('phoneNumber')?.hasError('required')">Phone Number is required</mat-error>
+            <mat-error *ngIf="form?.get('phoneNumber')?.hasError('pattern')">Invalid phone number</mat-error>
+            
           </mat-form-field>
         </p>
   
