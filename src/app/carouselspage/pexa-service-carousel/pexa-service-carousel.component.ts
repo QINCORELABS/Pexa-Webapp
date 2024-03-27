@@ -1,4 +1,12 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { PexacarwashcarouselService } from 'src/app/Services/pexacarwashcarousel.service';
+
+// Define an interface for the structure of car data
+interface Car {
+  name: string;
+  _id: string;
+  imageURL: string[];
+}
 
 @Component({
   selector: 'app-pexa-service-carousel',
@@ -8,14 +16,27 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 export class PexaServiceCarouselComponent implements OnInit {
   @ViewChild('carouselWrapper') carouselWrapper!: ElementRef;
 
-  slides: string[] =['Slide 1', 'Slide 2', 'Slide 3', 'Slide 4', 'Slide 5','Slide 1', 'Slide 2', 'Slide 3', 'Slide 4', 'Slide 5']; // Example slides, replace with your data
-
+  slides: any[] = []; // Combined array for both slides and car data
   scrollInterval: any;
 
-  constructor() { }
+  constructor(private pexaService: PexacarwashcarouselService) { }
 
   ngOnInit(): void {
     this.startAutoScroll();
+    this.fetchCarwashcategory();
+  }
+
+  fetchCarwashcategory(): void {
+    this.pexaService.getcarcategory().subscribe(
+      response => {
+        const carData = response.resultData.map((car: Car) => ({ // Specify the type of car parameter
+          type: 'car',
+          name: car.name,
+          imageURL: car.imageURL
+        }));
+        this.slides = [...this.slides, ...carData];
+        console.log(this.slides);
+      });
   }
 
   startAutoScroll(): void {

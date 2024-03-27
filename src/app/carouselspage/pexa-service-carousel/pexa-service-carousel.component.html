@@ -1,14 +1,16 @@
-<div class="carousel-container">
-    <div class="carousel-wrapper" #carouselWrapper>
-        
-        <div class="carousel-slide" *ngFor="let slide of slides">{{ slide }}
-            <div class="circle"><img src="" alt=""></div>
-            <div class="serviceName"><h4>Name</h4> </div>
-        
+<div>
+    <div class="carousel-container">
+      <div class="carousel-wrapper" #carouselWrapper>
+        <div class="carousel-slide" *ngFor="let item of slides">
+          <ng-container *ngIf="item.type === 'slide'">
+          </ng-container>
+            <div class="car-details">
+              <div class="circle">
+                <img class="car-image" [src]="item.imageURL[0]" alt="Car Image">
+              </div>
+              <div class="text">{{ item.name }}</div>
+            </div>
         </div>
-
-        <div class="servicesimage">
-
-        </div>
+      </div>
     </div>
-</div>
+  </div>

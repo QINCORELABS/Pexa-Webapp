@@ -58,6 +58,8 @@ const routes: Routes = [
   { path: 'View_all_offproducts', component: OfferedproductsComponent },
   { path: 'makes', component:MakeComponent },
   { path: 'model', component:ModelComponent},
+  { path: 'pexacarwashcategory', component:PexaServiceCarouselComponent},
+
 
 
 

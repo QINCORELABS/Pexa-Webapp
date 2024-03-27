@@ -7,7 +7,9 @@ export const environment = {
   featuredproduct: 'http://192.168.1.7:4002/v1.0',
   allproducts: 'http://192.168.1.7:4002/v1.0',
   offeredproducts: 'http://192.168.1.7:4002/v1.0',
-  makeurl: 'http://192.168.1.7:4002/v1.0'
+  makeurl: 'http://192.168.1.7:4002/v1.0',
+  pexacarwashcategory: 'http://192.168.1.7:4003/v1.0',
+
 
 
 };
